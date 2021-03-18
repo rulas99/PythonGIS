@@ -22,8 +22,8 @@ for i in f:
         datRad=toRadiance(dat,rad)
         datRef=toReflectance(dat,ref)
 
-        saveImg("/Users/rauldelarosa/Desktop/Octavo/PR2/act4/PreProcesadas/Rad_{}".format(b),datRad,img2)
-        saveImg("/Users/rauldelarosa/Desktop/Octavo/PR2/act4/PreProcesadas/Ref_{}.TIF".format(b),datRef,img2)
+        saveImg("/Users/rauldelarosa/Desktop/Octavo/PR2/act4/PreProcesadas/Rad_{}.tif".format(b),datRad,img2)
+        saveImg("/Users/rauldelarosa/Desktop/Octavo/PR2/act4/PreProcesadas/Ref_{}.tif".format(b),datRef,img2)
 
         del datRef, dat, img2 ,datRad
     except:
