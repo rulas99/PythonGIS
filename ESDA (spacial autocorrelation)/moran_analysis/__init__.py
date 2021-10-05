@@ -92,7 +92,7 @@ def moranAnalysis(agebs,col,suptitle, titleM1, cmap='viridis', q=6, sig = 0.05, 
     ax4.hlines(lag_migra.mean(), price.min(), price.max(), linestyle='--')
     ax4.plot(price, a + b*price, 'k',linewidth=2)
     #ax4.set_ylabel('Suma ponderada de sus vecinos (KNN)')
-    ax4.set_xlabel('% nacid@s en otra enitdad')
+    ax4.set_xlabel(titleM1)
     ax4.set_title(f'I de Moran: {round(b,3)}')
     ax4.spines['right'].set_visible(False)
     ax4.spines['top'].set_visible(False)
